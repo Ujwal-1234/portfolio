@@ -1,13 +1,11 @@
 import { useState } from "react";
 import { BsFolderFill } from "react-icons/bs";
-import Close from "./Close";
 import Display from "./Display";
 import { AiFillCloseCircle } from "react-icons/ai";
 
 function App() {
   var [show, setShow] = useState(false)
   var [switch_value, setSwitch]= useState("skills")
-  
   return (
     <div className="App">
       <main className='bg-black min-h-screen'>
@@ -32,5 +30,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
