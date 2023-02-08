@@ -14,10 +14,10 @@ function App() {
           </div>
         </section>
           <div className='bg-red-300 pb-20 text-center text-2xl'> {"<"} Developer {"/ >"}</div>
-        <section className=' sm:absolute sm:top-0 sm:text-black lg:flex justify-center h-auto text-white'>
-            <a className=' sm:justify-center sm:block p-14 hover:text-2xl hover:cursor-pointer' onClick={()=>{setSwitch("skills");setShow(true)}}><span className='justify-center text-4xl'><BsFolderFill /></span>SKILLS</a>
-            <a className=' sm:block p-14 hover:text-2xl hover:cursor-pointer' onClick={()=>{setSwitch("projects");setShow(true)}}><span className='text-4xl'><BsFolderFill /></span>PROJECTS</a>
-            <a className=' sm:block p-14 hover:text-2xl hover:cursor-pointer' onClick={()=>{setSwitch("about");setShow(true)}}><span className='text-4xl'><BsFolderFill /></span>ABOUT</a>
+        <section className=' lg:text-white sm:top-0 flex justify-center h-auto text-white'>
+            <a className=' p-5 lg:p-14 hover:text-2xl hover:cursor-pointer' onClick={()=>{setSwitch("skills");setShow(true)}}><span className='justify-center text-4xl'><BsFolderFill /></span>SKILLS</a>
+            <a className=' p-5 lg:p-14 hover:text-2xl hover:cursor-pointer' onClick={()=>{setSwitch("projects");setShow(true)}}><span className='text-4xl'><BsFolderFill /></span>PROJECTS</a>
+            <a className=' p-5 lg:p-14 hover:text-2xl hover:cursor-pointer' onClick={()=>{setSwitch("about");setShow(true)}}><span className='text-4xl'><BsFolderFill /></span>ABOUT</a>
         </section>
         {show?<><Display show={switch_value} /><div onClick={()=>setShow(false)} className="absolute left-1/2 text-4xl text-white bottom-10 hover:text-6xl hover:cursor-pointer">
             <AiFillCloseCircle /></div></>:''}
